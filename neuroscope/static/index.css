@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.features, .benefits {
+    padding: 20px;
+}
+
+.features h2, .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.features ul, .benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li, .benefits li {
+    margin-bottom: 10px;
+}
+
+.upload {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.upload h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.upload form {
