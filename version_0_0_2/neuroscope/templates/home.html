@@ -1,0 +1,56 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header class="home-header">
+        <h1>Brain MRI Classifier</h1>
+        <p>Identify potential brain abnormalities using deep learning.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="{{ url_for('static', filename='hero-image.jpg') }}" alt="MRI image of the brain">
+            <h2>Revolutionizing Brain Health</h2>
+            <p>Our innovative brain MRI classifier utilizes cutting-edge deep learning technology to analyze brain images and detect possible abnormalities.</p>
+            <a href="#upload" class="button">Upload Image</a>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Easy-to-use interface for uploading and classifying MRI images</li>
+                <li>Accurate classification of various brain abnormalities</li>
+                <li>Powered by state-of-the-art deep learning algorithms</li>
+                <li>Continuous improvement and updates</li>
+            </ul>
+        </section>
+
+        <section class="benefits">
+            <h2>Benefits</h2>
+            <ul>
+                <li>Early detection of potential brain abnormalities</li>
+                <li>Improved diagnosis and treatment planning</li>
+                <li>Peace of mind and enhanced well-being</li>
+                <li>Contribution to medical research and innovation</li>
+            </ul>
+        </section>
+
+        <section class="upload" id="upload">
+            <h2>Upload MRI Image</h2>
+            <p>Upload an MRI image to receive classification results.</p>
+            <form method="POST" enctype="multipart/form-data">
+                <label for="image">Select MRI Image:</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/gif">
+                <br>
+                <button type="submit">Upload and Classify</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <p>&copy; NeuroScope 2023</p>
+    </footer>
+{% endblock %}

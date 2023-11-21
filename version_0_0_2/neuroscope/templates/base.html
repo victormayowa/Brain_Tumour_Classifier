@@ -1,0 +1,57 @@
+<!-- neuroscope/templates/base.html -->
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='analysis.css') }}">
+    <!-- Add link to reports.css when you create it -->
+    <title>{% block title %}Neuroscope{% endblock %}</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Your Navbar Content Here -->
+        <div class="navbar-brand">
+            <span class="logo">Neuroscope</span>
+        </div>
+        <div class="navbar-menu">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('main.home') }}">Home</a></li>
+                <li><a href="{{ url_for('main.about') }}">About</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Your Sidebar Content Here -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <span class="logo">NS</span>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="{{ url_for('main.dashboard') }}">Dashboard</a></li>
+                <li><a href="{{ url_for('main.analysis') }}">Analysis</a></li>
+                <li><a href="{{ url_for('main.reports') }}">Reports</a></li>
+                <!-- Add more sidebar links as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

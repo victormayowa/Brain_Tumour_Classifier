@@ -1,0 +1,56 @@
+/* static/home.css */
+
+/* Home Page Specific Styles */
+.home-header {
+    background-color: #5c0000; /* Darker wine-colored background for header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.home-footer {
+    background-color: #5c0000; /* Darker wine-colored background for footer */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.features, .benefits, .upload {
+    background-color: #fff; /* White background for sections */
+    color: #000; /* Black text */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.features h2, .benefits h2, .upload h2 {
+    color: #5c0000; /* Wine-colored text for section headings */
+}
+
+.button {
+    background-color: #5c0000; /* Wine-colored background for buttons */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #8b0000; /* Darker wine-colored background on hover */
+}
+
+/* Add your additional styles here */

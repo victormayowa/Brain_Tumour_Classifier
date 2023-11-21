@@ -1,0 +1,77 @@
+/* static/base.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8b0000; /* Wine-colored background */
+    background-image: url('texture.png'); /* Add the path to your texture image */
+    background-repeat: repeat; /* Repeat the texture */
+    color: #fff; /* White text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #5c0000; /* Darker wine-colored background */
+    color: #fff; /* White text */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #5c0000; /* Darker wine-colored background */
+    color: #fff; /* White text */
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+}
+
+/* Add your additional styles here */
