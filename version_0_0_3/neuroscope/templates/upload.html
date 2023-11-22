@@ -1,0 +1,27 @@
+<!-- templates/upload.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Upload{% endblock %}
+
+{% block content %}
+    <header class="upload-header">
+        <h1>Upload MRI Image</h1>
+        <p>Submit an MRI image for analysis and classification.</p>
+    </header>
+
+    <main class="upload-main">
+        <section class="upload-form">
+            <form method="POST" enctype="multipart/form-data">
+                <label for="image">Select MRI Image:</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/gif">
+                <br>
+                <button type="submit" class="button">Upload and Classify</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="upload-footer">
+        <p>&copy; NeuroScope 2023</p>
+    </footer>
+{% endblock %}

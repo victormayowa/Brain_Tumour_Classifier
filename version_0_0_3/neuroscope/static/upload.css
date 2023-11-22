@@ -1,0 +1,28 @@
+/* static/upload.css */
+
+/* Upload Page Specific Styles */
+.upload-header {
+    background-color: #3498db; /* Blue background for header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-main {
+    padding: 20px;
+}
+
+.upload-form {
+    background-color: #fff; /* White background for form section */
+    color: #000; /* Black text */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.upload-footer {
+    background-color: #3498db; /* Blue background for footer */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+}

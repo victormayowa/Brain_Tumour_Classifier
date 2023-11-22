@@ -1,0 +1,61 @@
+/* static/about.css */
+
+/* About Page Specific Styles */
+.about-header {
+    background-color: #5c0000; /* Darker wine-colored background for header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.about-main {
+    padding: 20px;
+}
+
+.overview, .team, .technology {
+    background-color: #fff; /* White background for sections */
+    color: #000; /* Black text */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    animation: fadeInUp 1s ease-out; /* Add fade-in animation */
+}
+
+.overview h2, .team h2, .technology h2 {
+    color: #5c0000; /* Wine-colored text for section headings */
+}
+
+.about-footer {
+    background-color: #5c0000; /* Darker wine-colored background for footer */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Add fade-in animation */
+}
+
+/* Button Animation */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5c0000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8b0000; /* Darker wine-colored background on hover */
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

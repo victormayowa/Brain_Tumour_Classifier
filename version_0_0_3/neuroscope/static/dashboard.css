@@ -1,0 +1,28 @@
+/* static/dashboard.css */
+
+/* Dashboard Page Specific Styles */
+.dashboard-header {
+    background-color: #27ae60; /* Green background for header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-main {
+    padding: 20px;
+}
+
+.dashboard-content {
+    background-color: #fff; /* White background for content section */
+    color: #000; /* Black text */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.dashboard-footer {
+    background-color: #27ae60; /* Green background for footer */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+}

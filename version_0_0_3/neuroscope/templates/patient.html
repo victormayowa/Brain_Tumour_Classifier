@@ -1,0 +1,31 @@
+<!-- neuroscope/templates/patient.html -->
+{% extends 'base.html' %}
+
+{% block title %}NeuroScope - Patient Information{% endblock %}
+
+{% block content %}
+    <h1>NeuroScope - Patient Information</h1>
+    
+    <form action="{{ url_for('submit') }}" method="post">
+        <!-- Form fields... -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="birthdate">Birth date:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="contactInfo">Contact Info:</label>
+        <input type="text" id="contactInfo" name="contactInfo" required>
+        <button type="submit">Submit</button>
+    </form>
+      
+    <h2>Patients:</h2>
+    <ul>
+        {% for patient in patients %}
+            <li>{{ patient.first_name }} {{ patient.last_name }} - {{ patient.birthdate }} - {{ patient.contact_info }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

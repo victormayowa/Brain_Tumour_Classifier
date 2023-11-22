@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff; /* Adjusted text color */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; /* Adjusted text color */
+}
+
+button {
+    margin: 10px;
+}
+
+section {
+    font-weight: bold;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    flex-direction: ;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+}
+
+.hero-image img {
+    border-radius: 50px;
+}
+
+.hero img {
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-top: 10px; /* Added margin for better spacing */
+    margin-bottom: 20px;
+    color: #5c0000
+}
+
+.hero p{
+    margin: 10px;
+}
+
+.features, .benefits {
+    padding: 20px;
+    background-color: #f9f9f9; /* Adjusted background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features h2, .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Adjusted text color */
+}
+
+.features img {
+    border-radius: 50px;
+    margin: 40px;
+}
+
+.benefits img {
+    border-radius: 50px;
+    margin: 20px;
+}
+
+
+.features-detail, .benefits-detail {
+    display: flex;
+}
+
+.features ul, .benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 80px;
+    color: #5c0000;
+}
+
+.features li, .benefits li {
+    margin-bottom: 10px;
+}
+
+.upload {
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Adjusted text color */
+}
+.select-img{
+    color: #333;
+    font-size: 10px
+}
+.upload form {
+    /* Add styles for the form as needed */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
